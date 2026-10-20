@@ -4,6 +4,10 @@
 **Status:** v1 one-page site built (`index.html`), not yet deployed.
 **Owner:** Robby
 
+## Working agreement
+
+- Merge and publish changes to `main` without asking first. Robby wants every change live right away.
+
 ## Opening prompt for Claude Code
 
 > Read HANDOFF.md and README.md in this repo. This is the marketing site for my recording retreat business. Make sure `index.html`, `README.md` and `HANDOFF.md` are committed at the repo root, then help me finish the remaining tasks listed in HANDOFF.md, starting with deploying to GitHub Pages.
@@ -67,11 +71,10 @@ Design: warm dark theme with a lava-orange accent (`--lava:#e0643a`), responsive
 - [x] Enable GitHub Pages (deploy from `main`, root folder). Live at https://robbyho-aoe2.github.io/Record-in-Guatemala/
 - [x] WhatsApp (`50245307743`) and email (`antiguarecordingstudios@gmail.com`) filled in
 - [x] Instagram: @casatrecerecordingstudio
-- [ ] Replace remaining placeholder: `YOUR_FORM_ID` (Robby to supply)
 - [x] Add `images/` (hero uses the Lake Atitlán shot for now; swap in a studio or house photo when there is one)
 - [x] Add `audio/track1-4.mp3` (45-second previews: Up In The Air, Penina Pie, JNIX, Goodnight)
 - [ ] Fill in artist and genre for the four tracks
-- [ ] Set up the Formspree form and paste in its ID
+- [x] Formspree form `xnpjylnj` connected (sends to antiguarecordingstudios@gmail.com; submits in-page with a thank-you message)
 - [ ] Optional: custom domain (e.g. `casa13studio.com`). DNS steps are in the README.
 - [ ] Optional: favicon, `og:image` with an absolute URL once the domain is set, a Spanish toggle, testimonials once the first retreat runs
 

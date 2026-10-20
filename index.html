@@ -142,6 +142,13 @@
   input:focus,select:focus,textarea:focus{outline:2px solid var(--lava);outline-offset:1px;border-color:transparent}
   textarea{min-height:110px;resize:vertical}
   form button{border:0;cursor:pointer;font:inherit}
+  form button:disabled{opacity:.6;cursor:default;transform:none}
+  .hp{position:absolute;left:-9999px}
+  .form-status{font-size:.95rem;color:var(--muted)}
+  .form-status.ok{color:var(--jade)}
+  .form-status.err{color:var(--lava2)}
+  .form-done{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:32px;align-self:start}
+  .form-done p{color:var(--muted);margin-top:.4rem}
 
   footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:.9rem}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
@@ -380,8 +387,10 @@
           <div><strong>Email</strong><small>antiguarecordingstudios@gmail.com</small></div>
         </a>
       </div>
-      <!-- REPLACE: Formspree form ID (see README) -->
-      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <!-- Inquiries go to Formspree (form xnpjylnj), which emails them on -->
+      <form id="inquiry" action="https://formspree.io/f/xnpjylnj" method="POST">
+        <input type="hidden" name="_subject" value="New Casa 13 retreat inquiry">
+        <label class="hp" aria-hidden="true">Leave this empty<input name="_gotcha" tabindex="-1" autocomplete="off"></label>
         <div class="row">
           <label>Your name<input name="name" required></label>
           <label>Email<input type="email" name="email" required></label>
@@ -401,6 +410,7 @@
         <label>Links to your music<input name="links" placeholder="Spotify, Bandcamp, YouTube…"></label>
         <label>Anything else?<textarea name="message" placeholder="What you want to record, excursions you're into, questions…"></textarea></label>
         <button type="submit" class="btn btn-primary">Send inquiry</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
       </form>
     </div>
   </div>
@@ -418,6 +428,30 @@
   const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
   window.addEventListener('scroll',onScroll,{passive:true});onScroll();
   document.getElementById('yr').textContent=new Date().getFullYear();
+
+  // Send the inquiry without leaving the page. Without JS the form still posts normally.
+  const form=document.getElementById('inquiry');
+  form.addEventListener('submit',async e=>{
+    e.preventDefault();
+    const btn=form.querySelector('button[type=submit]');
+    const status=form.querySelector('.form-status');
+    btn.disabled=true;btn.textContent='Sending…';status.className='form-status';status.textContent='';
+    try{
+      const res=await fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}});
+      if(!res.ok){
+        const data=await res.json().catch(()=>({}));
+        throw new Error((data.errors||[]).map(x=>x.message).join(' ')||'Something went wrong.');
+      }
+      const done=document.createElement('div');
+      done.className='form-done';
+      done.innerHTML='<h3>Thanks, we got it.</h3><p>We\'ll get back to you within a day or two. For a faster reply, message us on WhatsApp.</p>';
+      form.replaceWith(done);
+    }catch(err){
+      status.className='form-status err';
+      status.textContent=err.message+' Please try again, or reach us on WhatsApp or email.';
+      btn.disabled=false;btn.textContent='Send inquiry';
+    }
+  });
 </script>
 </body>
 </html>
