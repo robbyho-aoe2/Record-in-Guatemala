@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Casa 13 Studio · Recording Retreats in Guatemala</title>
+<meta name="description" content="All-inclusive recording retreats near Antigua, Guatemala. Private house, chef, housekeeper, transport, recording and mixing, plus instrumentalists and production support.">
+<meta property="og:title" content="Casa 13 Studio · Record your album in Guatemala">
+<meta property="og:description" content="5 nights. 6 songs. A house under the volcanoes. We handle everything.">
+<meta property="og:image" content="images/hero.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#16120f; --bg2:#1f1915; --card:#271f1a; --line:#3a2e26;
+    --text:#f3ebe1; --muted:#b9a999; --lava:#e0643a; --lava2:#f08a4b; --jade:#6fa58c;
+    --radius:16px; --max:1120px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font:400 17px/1.6 Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+  img{max-width:100%;display:block}
+  a{color:inherit}
+  h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1;letter-spacing:-.01em}
+  h2{font-size:clamp(2rem,4.5vw,3rem);margin-bottom:.6rem}
+  h3{font-size:1.25rem;margin-bottom:.4rem}
+  .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
+  section{padding:96px 0}
+  .eyebrow{color:var(--lava2);font-weight:600;font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;margin-bottom:.8rem}
+  .lead{color:var(--muted);font-size:1.1rem;max-width:620px}
+  .btn{display:inline-block;padding:14px 26px;border-radius:999px;font-weight:600;text-decoration:none;transition:transform .15s,background .15s}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-primary{background:var(--lava);color:#fff}
+  .btn-primary:hover{background:var(--lava2)}
+  .btn-ghost{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+  .btn-ghost:hover{border-color:#fff}
+
+  /* nav */
+  nav{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .25s}
+  nav.scrolled{background:rgba(22,18,15,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-family:Fraunces,serif;font-weight:700;font-size:1.35rem;text-decoration:none}
+  .logo span{color:var(--lava)}
+  .navlinks{display:flex;gap:28px;align-items:center}
+  .navlinks a{text-decoration:none;font-size:.95rem;color:var(--muted)}
+  .navlinks a:hover{color:var(--text)}
+  .navlinks .btn{padding:9px 18px;color:#fff}
+  @media(max-width:820px){.navlinks a:not(.btn){display:none}}
+
+  /* hero */
+  .hero{min-height:100vh;display:flex;align-items:flex-end;padding:0 0 90px;position:relative;
+    background:
+      linear-gradient(180deg,rgba(22,18,15,.25) 0%,rgba(22,18,15,.55) 55%,var(--bg) 100%),
+      url('images/hero.jpg') center/cover no-repeat,
+      radial-gradient(ellipse at 70% 30%,#7a3a22 0%,#3b2219 40%,#16120f 80%)}
+  .hero h1{font-size:clamp(2.6rem,7.5vw,5.6rem);max-width:900px;margin-bottom:1.2rem}
+  .hero h1 em{font-style:normal;color:var(--lava2)}
+  .hero p{font-size:clamp(1.05rem,2vw,1.3rem);color:#e6dbcf;max-width:640px;margin-bottom:2rem}
+  .hero .ctas{display:flex;gap:14px;flex-wrap:wrap}
+  .facts{display:flex;gap:36px;flex-wrap:wrap;margin-top:56px;padding-top:28px;border-top:1px solid rgba(255,255,255,.15)}
+  .facts div{font-size:.9rem;color:var(--muted)}
+  .facts strong{display:block;font-family:Fraunces,serif;font-size:1.7rem;color:var(--text)}
+
+  /* steps */
+  .steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:48px;counter-reset:s}
+  .step{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;position:relative}
+  .step::before{counter-increment:s;content:counter(s,decimal-leading-zero);font-family:Fraunces,serif;font-size:2.2rem;color:var(--lava);display:block;margin-bottom:12px}
+  .step p{color:var(--muted);font-size:.95rem}
+  @media(max-width:980px){.steps{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.steps{grid-template-columns:1fr}}
+
+  /* included */
+  .alt{background:var(--bg2)}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:560px){.grid{grid-template-columns:1fr}}
+  .item{padding:28px;border-radius:var(--radius);background:var(--card);border:1px solid var(--line)}
+  .item .ic{width:44px;height:44px;border-radius:12px;background:rgba(224,100,58,.14);display:grid;place-items:center;margin-bottom:16px}
+  .item .ic svg{width:22px;height:22px;stroke:var(--lava2);fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+  .item p{color:var(--muted);font-size:.95rem}
+
+  /* pricing */
+  .pricing{display:grid;grid-template-columns:1.1fr .9fr;gap:28px;margin-top:48px;align-items:start}
+  @media(max-width:880px){.pricing{grid-template-columns:1fr}}
+  .plan{background:linear-gradient(160deg,#3a2219,#271f1a 60%);border:1px solid #5a3826;border-radius:22px;padding:40px}
+  .tag{display:inline-block;background:var(--lava);color:#fff;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 12px;border-radius:999px;margin-bottom:18px}
+  .price{font-family:Fraunces,serif;font-size:clamp(3rem,7vw,4.4rem);line-height:1}
+  .price small{font-family:Inter,sans-serif;font-size:1rem;color:var(--muted);font-weight:500}
+  .pp{color:var(--lava2);font-weight:600;margin:.6rem 0 1.6rem}
+  .plan ul{list-style:none;display:grid;gap:10px;margin-bottom:2rem}
+  .plan li{padding-left:28px;position:relative}
+  .plan li::before{content:"";position:absolute;left:0;top:.5em;width:14px;height:8px;border-left:2px solid var(--jade);border-bottom:2px solid var(--jade);transform:rotate(-45deg)}
+  .side{display:grid;gap:18px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px}
+  .box h3{font-family:Inter,sans-serif;font-size:1rem;font-weight:600;margin-bottom:.8rem}
+  .box p,.box li{color:var(--muted);font-size:.95rem}
+  .box ul{padding-left:18px;display:grid;gap:4px}
+  .note{font-size:.85rem;color:var(--muted);margin-top:1rem}
+
+  /* work */
+  .tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:48px}
+  @media(max-width:900px){.tracks{grid-template-columns:1fr}}
+  .track{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+  .track .meta{font-size:.85rem;color:var(--muted);margin-bottom:14px}
+  .track audio{width:100%;height:40px}
+
+  /* gallery */
+  .gallery{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:240px 240px;gap:14px;margin-top:48px}
+  .ph{border-radius:var(--radius);position:relative;overflow:hidden;background-size:cover;background-position:center;display:flex;align-items:flex-end;padding:18px}
+  .ph span{background:rgba(0,0,0,.55);backdrop-filter:blur(6px);padding:6px 12px;border-radius:999px;font-size:.85rem;font-weight:500}
+  .ph.big{grid-row:span 2}
+  .g1{background-image:url('images/volcano.jpg'),linear-gradient(135deg,#5b2d1c,#2a1d17)}
+  .g2{background-image:url('images/antigua.jpg'),linear-gradient(135deg,#7d5a3c,#3a2a1f)}
+  .g3{background-image:url('images/night.jpg'),linear-gradient(135deg,#2d2440,#16120f)}
+  .g4{background-image:url('images/lake.jpg'),linear-gradient(135deg,#2f5a55,#17201e)}
+  .g5{background-image:url('images/food.jpg'),linear-gradient(135deg,#6d4a24,#2a1d17)}
+  @media(max-width:760px){.gallery{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:180px}.ph.big{grid-column:span 2;grid-row:auto}}
+  .addon{margin-top:22px;color:var(--muted);font-size:.95rem}
+
+  /* faq */
+  .faq{max-width:780px;margin-top:40px}
+  details{border-bottom:1px solid var(--line);padding:20px 0}
+  summary{cursor:pointer;font-weight:600;font-size:1.05rem;list-style:none;display:flex;justify-content:space-between;gap:20px}
+  summary::-webkit-details-marker{display:none}
+  summary::after{content:"+";color:var(--lava2);font-size:1.4rem;line-height:1;transition:transform .2s}
+  details[open] summary::after{transform:rotate(45deg)}
+  details p{color:var(--muted);margin-top:12px}
+
+  /* contact */
+  .contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;margin-top:40px}
+  @media(max-width:880px){.contact{grid-template-columns:1fr}}
+  .channels{display:grid;gap:12px;align-content:start}
+  .channel{display:flex;align-items:center;gap:14px;padding:18px 20px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);text-decoration:none;transition:border-color .15s}
+  .channel:hover{border-color:var(--lava)}
+  .channel small{display:block;color:var(--muted);font-size:.85rem}
+  form{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:32px;display:grid;gap:16px}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:560px){.row{grid-template-columns:1fr}}
+  label{font-size:.85rem;color:var(--muted);display:grid;gap:6px}
+  input,select,textarea{background:var(--bg);border:1px solid var(--line);border-radius:10px;padding:12px 14px;color:var(--text);font:inherit;font-size:.95rem;width:100%}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--lava);outline-offset:1px;border-color:transparent}
+  textarea{min-height:110px;resize:vertical}
+  form button{border:0;cursor:pointer;font:inherit}
+
+  footer{border-top:1px solid var(--line);padding:36px 0;color:var(--muted);font-size:.9rem}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <div class="wrap">
+    <a href="#" class="logo">Casa <span>13</span></a>
+    <div class="navlinks">
+      <a href="#how">How it works</a>
+      <a href="#included">Included</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary">Check dates</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Casa 13 Studio · Antigua, Guatemala</div>
+    <h1>Record your album in <em>Guatemala.</em></h1>
+    <p>A private house under the volcanoes, a chef, a crew, and a week to make your record. You bring the songs. We handle everything else.</p>
+    <div class="ctas">
+      <a href="#contact" class="btn btn-primary">Check available dates</a>
+      <a href="#how" class="btn btn-ghost">How it works</a>
+    </div>
+    <div class="facts">
+      <div><strong>5 nights</strong>in a private house</div>
+      <div><strong>6 songs</strong>recorded &amp; mixed</div>
+      <div><strong>All-inclusive</strong>food, transport, crew</div>
+      <div><strong>2–5 hrs</strong>flight from the US</div>
+    </div>
+  </div>
+</header>
+
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow">How it works</div>
+    <h2>From inbox to finished songs.</h2>
+    <p class="lead">We plan the whole trip with you, so the only thing you need to think about once you land is the music.</p>
+    <div class="steps">
+      <div class="step"><h3>Plan</h3><p>We talk through your songs, sound, and dates. A 50% deposit locks in your week.</p></div>
+      <div class="step"><h3>Fly in</h3><p>Land in Guatemala City. We pick you up at the airport and drive you to the house.</p></div>
+      <div class="step"><h3>Settle in</h3><p>Your private house is already set up as a studio. Unpack, eat, plug in.</p></div>
+      <div class="step"><h3>Record</h3><p>Five focused days tracking with instrumentalists and production support on hand.</p></div>
+      <div class="step"><h3>Explore</h3><p>Hike a volcano, wander Antigua, go out at night. Fly home, mixes follow.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="included" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">What's included</div>
+    <h2>One price. Everything handled.</h2>
+    <p class="lead">No hotel hunting, no grocery runs, no studio clock ticking. Just a week built around making your record.</p>
+    <div class="grid">
+      <div class="item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg></div>
+        <h3>Private house</h3><p>A villa near Antigua for your band, set up as your studio for the week.</p>
+      </div>
+      <div class="item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M6 13.87A4 4 0 0 1 7.41 6a5.11 5.11 0 0 1 9.18 0A4 4 0 0 1 18 13.87V21H6z"/><path d="M6 17h12"/></svg></div>
+        <h3>Private chef</h3><p>Home-cooked meals every day, from Guatemalan classics to whatever keeps you going.</p>
+      </div>
+      <div class="item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M12 3l1.9 5.8H20l-4.9 3.6 1.9 5.8L12 14.6l-4.9 3.6 1.9-5.8L4 8.8h6.1z"/></svg></div>
+        <h3>Housekeeper</h3><p>The house stays clean and stocked, so the only mess is on the mixing desk.</p>
+      </div>
+      <div class="item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M5 17h14M6 17V9l2-4h8l2 4v8"/><circle cx="8" cy="17" r="2"/><circle cx="16" cy="17" r="2"/><path d="M6 11h12"/></svg></div>
+        <h3>Transport</h3><p>Airport pickup and drop-off, plus a driver for the week. No rentals, no stress.</p>
+      </div>
+      <div class="item">
+        <div class="ic"><svg viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></div>
+        <h3>Recording &amp; mixing</h3><p>Pro mics, preamps and monitoring, with engineering through the week and finished mixes after.</p>
+      </div>
+      <div class="item">
+        <div class="ic"><svg viewBox="0 0 24 24"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></div>
+        <h3>Instrumentalists &amp; production support</h3><p>Need keys, strings, or another guitar part? Players and arrangement help are on hand.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <div class="eyebrow">Packages</div>
+    <h2>Simple, all-in pricing.</h2>
+    <p class="lead">Priced per band, not per hour. Split four ways, it costs about the same as a week of studio time back home, with the trip included.</p>
+    <div class="pricing">
+      <div class="plan">
+        <div class="tag">EP Retreat</div>
+        <div class="price">$5,900 <small>per band</small></div>
+        <div class="pp">≈ $1,475 per person for a 4-piece</div>
+        <ul>
+          <li>5 nights in a private house near Antigua</li>
+          <li>6 songs recorded and mixed</li>
+          <li>Private chef and housekeeper</li>
+          <li>Airport pickup and daily transport</li>
+          <li>Instrumentalists and production support</li>
+          <li>Planning call before your trip</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Check dates</a>
+        <p class="note">Flights not included. Larger bands, longer stays and full albums quoted on request.</p>
+      </div>
+      <div class="side">
+        <div class="box">
+          <h3>Add-ons</h3>
+          <ul>
+            <li>Excursions: volcano hikes, tours, Lake Atitlán, nights out</li>
+            <li>Mastering</li>
+            <li>Extra songs or extra nights</li>
+            <li>Live session or music video shoot</li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Payment</h3>
+          <p>50% deposit to book your dates. Balance due 30 days before arrival. Bank transfer or Wise preferred.</p>
+        </div>
+        <div class="box">
+          <h3>Solo artists &amp; duos</h3>
+          <p>Smaller retreats are available too. Tell us what you're working on and we'll build a package.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">Past work</div>
+    <h2>Recorded at Casa 13.</h2>
+    <p class="lead">Albums, singles, DJ tracks and voice work for artists from Guatemala to Israel to the US.</p>
+    <div class="tracks">
+      <div class="track">
+        <h3>Track title</h3>
+        <div class="meta">Artist name · Genre</div>
+        <audio controls preload="none" src="audio/track1.mp3"></audio>
+      </div>
+      <div class="track">
+        <h3>Track title</h3>
+        <div class="meta">Artist name · Genre</div>
+        <audio controls preload="none" src="audio/track2.mp3"></audio>
+      </div>
+      <div class="track">
+        <h3>Track title</h3>
+        <div class="meta">Artist name · Genre</div>
+        <audio controls preload="none" src="audio/track3.mp3"></audio>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="adventures">
+  <div class="wrap">
+    <div class="eyebrow">Beyond the studio</div>
+    <h2>Make the record. Make the memories.</h2>
+    <p class="lead">Guatemala is right outside the door. Tell us what you're into and we'll plan around your sessions, or just get you where you want to go.</p>
+    <div class="gallery">
+      <div class="ph big g1"><span>Volcano hikes</span></div>
+      <div class="ph g2"><span>Antigua</span></div>
+      <div class="ph g3"><span>Nights out</span></div>
+      <div class="ph g4"><span>Lake Atitlán</span></div>
+      <div class="ph g5"><span>Local food</span></div>
+    </div>
+    <p class="addon">Excursions are optional add-ons, priced per trip.</p>
+  </div>
+</section>
+
+<section id="faq" class="alt">
+  <div class="wrap">
+    <div class="eyebrow">FAQ</div>
+    <h2>Questions bands ask.</h2>
+    <div class="faq">
+      <details>
+        <summary>Is Guatemala safe?</summary>
+        <p>Antigua is one of Central America's most visited cities. You'll have private transport for the whole trip, a house of your own, and guides we know personally for every excursion. We live here and will steer you toward the right places.</p>
+      </details>
+      <details>
+        <summary>Where do we fly into?</summary>
+        <p>La Aurora International Airport (GUA) in Guatemala City. There are direct flights from Houston, Miami, Atlanta, Dallas, LA, New York and more. We pick you up there, and the drive to the house is about an hour.</p>
+      </details>
+      <details>
+        <summary>Do we need a visa?</summary>
+        <p>Visitors from the US, Canada, the UK and the EU generally don't need a visa for short stays. Check the requirements for your own passport before booking.</p>
+      </details>
+      <details>
+        <summary>What should we bring?</summary>
+        <p>Your guitars, basses, pedals and anything that's core to your sound. We provide mics, preamps, monitoring, headphones, amps and keys. We'll send a full gear list during planning.</p>
+      </details>
+      <details>
+        <summary>What about drums?</summary>
+        <p>We can program drums, and live drum options can be arranged. Tell us about your project and we'll find the best fit.</p>
+      </details>
+      <details>
+        <summary>Can we do more than 6 songs?</summary>
+        <p>Yes. Add extra nights or songs, or ask about a full-album retreat.</p>
+      </details>
+      <details>
+        <summary>Is mastering included?</summary>
+        <p>Mixing is included. Mastering is available as an add-on.</p>
+      </details>
+      <details>
+        <summary>Do you speak English?</summary>
+        <p>Yes. Everything is run in English.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="eyebrow">Get in touch</div>
+    <h2>Let's plan your week.</h2>
+    <p class="lead">Tell us about your band and when you're thinking of coming. We'll get back to you within a day or two.</p>
+    <div class="contact">
+      <div class="channels">
+        <!-- REPLACE: Instagram handle -->
+        <a class="channel" href="https://instagram.com/YOUR_HANDLE" target="_blank" rel="noopener">
+          <div><strong>Instagram</strong><small>DM us "RETREAT"</small></div>
+        </a>
+        <!-- REPLACE: WhatsApp number, digits only with country code, e.g. 50212345678 -->
+        <a class="channel" href="https://wa.me/YOUR_NUMBER" target="_blank" rel="noopener">
+          <div><strong>WhatsApp</strong><small>Fastest reply</small></div>
+        </a>
+        <!-- REPLACE: email address -->
+        <a class="channel" href="mailto:YOUR_EMAIL">
+          <div><strong>Email</strong><small>YOUR_EMAIL</small></div>
+        </a>
+      </div>
+      <!-- REPLACE: Formspree form ID (see README) -->
+      <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <div class="row">
+          <label>Your name<input name="name" required></label>
+          <label>Email<input type="email" name="email" required></label>
+        </div>
+        <div class="row">
+          <label>Band / artist name<input name="band"></label>
+          <label>Genre<input name="genre"></label>
+        </div>
+        <div class="row">
+          <label>Number of people
+            <select name="people">
+              <option>1</option><option>2</option><option>3</option><option selected>4</option><option>5</option><option>6+</option>
+            </select>
+          </label>
+          <label>Preferred dates<input name="dates" placeholder="e.g. March 2027"></label>
+        </div>
+        <label>Links to your music<input name="links" placeholder="Spotify, Bandcamp, YouTube…"></label>
+        <label>Anything else?<textarea name="message" placeholder="What you want to record, excursions you're into, questions…"></textarea></label>
+        <button type="submit" class="btn btn-primary">Send inquiry</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© <span id="yr"></span> Casa 13 Studio · Sacatepéquez, Guatemala</div>
+    <div>Recording retreats for bands &amp; artists</div>
+  </div>
+</footer>
+
+<script>
+  const nav=document.getElementById('nav');
+  const onScroll=()=>nav.classList.toggle('scrolled',window.scrollY>40);
+  window.addEventListener('scroll',onScroll,{passive:true});onScroll();
+  document.getElementById('yr').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
