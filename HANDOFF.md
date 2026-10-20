@@ -64,7 +64,8 @@ Design: warm dark theme with a lava-orange accent (`--lava:#e0643a`), responsive
 
 - [x] Commit `index.html`, `README.md` and `HANDOFF.md` to the repo root
 - [ ] Enable GitHub Pages (deploy from `main`, root folder)
-- [ ] Replace placeholders: `YOUR_HANDLE`, `YOUR_NUMBER`, `YOUR_EMAIL`, `YOUR_FORM_ID` (Robby to supply)
+- [x] WhatsApp (`50245307743`) and email (`antiguarecordingstudios@gmail.com`) filled in
+- [ ] Replace remaining placeholders: `YOUR_HANDLE`, `YOUR_FORM_ID` (Robby to supply)
 - [ ] Add `images/` with `hero.jpg`, `volcano.jpg`, `antigua.jpg`, `night.jpg`, `lake.jpg`, `food.jpg`. Compress each to under ~500 KB.
 - [ ] Add `audio/track1-3.mp3` (30–60 second previews) and update the track titles, artists and genres
 - [ ] Set up the Formspree form and paste in its ID
