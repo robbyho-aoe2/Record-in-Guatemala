@@ -55,7 +55,7 @@ Single self-contained file: inline CSS and JS, Google Fonts (Fraunces + Inter), 
 3. What's included: 6 cards
 4. Pricing: the EP Retreat card, plus add-ons, payment, and solo/duo
 5. Past work: 4 audio players in a 2×2 grid
-6. Adventures: photo gallery (placeholders with gradient fallbacks)
+6. Adventures: photo gallery (volcano, Antigua, nights out, Lake Atitlán, food)
 7. FAQ: safety, airport, visas, what to bring, drums, more songs, mastering, English
 8. Contact: Instagram, WhatsApp and email links, plus the Formspree inquiry form
 
@@ -64,10 +64,11 @@ Design: warm dark theme with a lava-orange accent (`--lava:#e0643a`), responsive
 ## Remaining tasks
 
 - [x] Commit `index.html`, `README.md` and `HANDOFF.md` to the repo root
-- [ ] Enable GitHub Pages (deploy from `main`, root folder)
+- [x] Enable GitHub Pages (deploy from `main`, root folder). Live at https://robbyho-aoe2.github.io/Record-in-Guatemala/
 - [x] WhatsApp (`50245307743`) and email (`antiguarecordingstudios@gmail.com`) filled in
-- [ ] Replace remaining placeholders: `YOUR_HANDLE`, `YOUR_FORM_ID` (Robby to supply)
-- [ ] Add `images/` with `hero.jpg`, `volcano.jpg`, `antigua.jpg`, `night.jpg`, `lake.jpg`, `food.jpg`. Compress each to under ~500 KB.
+- [x] Instagram: @casatrecerecordingstudio
+- [ ] Replace remaining placeholder: `YOUR_FORM_ID` (Robby to supply)
+- [x] Add `images/` (hero uses the Lake Atitlán shot for now; swap in a studio or house photo when there is one)
 - [x] Add `audio/track1-4.mp3` (45-second previews: Up In The Air, Penina Pie, JNIX, Goodnight)
 - [ ] Fill in artist and genre for the four tracks
 - [ ] Set up the Formspree form and paste in its ID
