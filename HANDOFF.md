@@ -73,7 +73,7 @@ Design: warm dark theme with a lava-orange accent (`--lava:#e0643a`), responsive
 - [x] Instagram: @casatrecerecordingstudio
 - [x] Add `images/` (hero uses the Lake Atitlán shot for now; swap in a studio or house photo when there is one)
 - [x] Add `audio/track1-4.mp3` (45-second previews: Up In The Air, Penina Pie, JNIX, Goodnight)
-- [ ] Artist names for Up In The Air (YouTube @77shani1) and Goodnight. Penina Pie and JNIX are Eden Naor (YouTube @Eden33Naor). No genres shown.
+- [ ] Artist name for Up In The Air (YouTube @77shani1). Goodnight (shown first) is Xavier Fuentes. Penina Pie and JNIX are Eden Naor (YouTube @Eden33Naor). No genres shown.
 - [x] Formspree form `xnpjylnj` connected (sends to antiguarecordingstudios@gmail.com; submits in-page with a thank-you message)
 - [ ] Optional: custom domain (e.g. `casa13studio.com`). DNS steps are in the README.
 - [ ] Optional: favicon, `og:image` with an absolute URL once the domain is set, a Spanish toggle, testimonials once the first retreat runs
