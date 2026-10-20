@@ -22,7 +22,7 @@ Until now, marketing has been Instagram and referrals. This site is the link for
 
 - 5 nights in a private house near Antigua
 - 6 songs recorded and mixed
-- Private chef and housekeeper
+- Private cook and housekeeper
 - Airport pickup and daily transport
 - Instrumentalists and production support
 - Planning call before the trip
@@ -37,12 +37,13 @@ Until now, marketing has been Instagram and referrals. This site is the link for
 ## Copy decisions (keep these)
 
 - Don't name individual collaborators or say "producer". Use **"instrumentalists and production support"**.
-- **Housekeeper** is listed as included, alongside the chef.
+- **Housekeeper** is listed as included, alongside the cook.
 - Flight time reads **"2–5 hrs from the US"**. Don't claim ~3 hrs.
 - Don't claim the house is "acoustically treated".
 - Drums: say "We can program drums, and live drum options can be arranged." Don't promise a live drum room.
 - Everything is run in English, so say so in the FAQ.
 - Price comparison framing: about the same as a mid-level US city studio week, **with the trip included**. Don't claim it's cheaper than any US studio.
+- Say **"private cook"**, not "chef".
 - Tone: warm, short and confident. Primary CTA is "Check dates".
 
 ## Site structure (`index.html`)
