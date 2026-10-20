@@ -68,7 +68,8 @@ Design: warm dark theme with a lava-orange accent (`--lava:#e0643a`), responsive
 - [x] WhatsApp (`50245307743`) and email (`antiguarecordingstudios@gmail.com`) filled in
 - [ ] Replace remaining placeholders: `YOUR_HANDLE`, `YOUR_FORM_ID` (Robby to supply)
 - [ ] Add `images/` with `hero.jpg`, `volcano.jpg`, `antigua.jpg`, `night.jpg`, `lake.jpg`, `food.jpg`. Compress each to under ~500 KB.
-- [ ] Add `audio/track1-3.mp3` (30–60 second previews) and update the track titles, artists and genres
+- [x] Add `audio/track1-3.mp3` (45-second previews: Up In The Air, Penina Pie, JNIX)
+- [ ] Fill in artist and genre for the three tracks
 - [ ] Set up the Formspree form and paste in its ID
 - [ ] Optional: custom domain (e.g. `casa13studio.com`). DNS steps are in the README.
 - [ ] Optional: favicon, `og:image` with an absolute URL once the domain is set, a Spanish toggle, testimonials once the first retreat runs
