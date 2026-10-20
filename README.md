@@ -2,18 +2,18 @@
 
 A one-page site for Casa 13 recording retreats. Plain HTML, no build step, ready for GitHub Pages.
 
-## 1. Fill in your details
+## 1. Contact details
 
-Open `index.html` and search for `YOUR_`. Replace:
+These are already filled in. To change one, open `index.html` and search for the current value.
 
-| Placeholder | Replace with |
+| What | Current value |
 |---|---|
-| `YOUR_HANDLE` | Your Instagram handle (no @) |
-| `YOUR_NUMBER` | WhatsApp number, digits only with country code, e.g. `50212345678` |
-| `YOUR_EMAIL` | Your email (it appears twice) |
-| `YOUR_FORM_ID` | Your Formspree form ID (see step 3) |
+| Instagram | `casatrecerecordingstudio` |
+| WhatsApp | `50245307743` (digits only, with country code) |
+| Email | `antiguarecordingstudios@gmail.com` (appears twice) |
+| Formspree form ID | `xnpjylnj` |
 
-Also edit the three **Past work** tracks: titles, artist names and genres.
+Also edit the **Past work** tracks: titles, artist names and genres.
 
 ## 2. Add photos and audio
 
@@ -39,7 +39,7 @@ GitHub Pages can't process forms by itself, so the form uses Formspree (the free
 
 1. Sign up at formspree.io and create a new form.
 2. Copy the form ID, the part after `/f/` in the endpoint URL.
-3. Paste it in place of `YOUR_FORM_ID`.
+3. Paste it into the form's `action` URL in `index.html` (currently `xnpjylnj`).
 
 Inquiries will arrive in your email.
 
