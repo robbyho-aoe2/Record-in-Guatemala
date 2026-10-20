@@ -73,7 +73,7 @@ Design: warm dark theme with a lava-orange accent (`--lava:#e0643a`), responsive
 - [x] Instagram: @casatrecerecordingstudio
 - [x] Add `images/` (hero uses the Lake Atitlán shot for now; swap in a studio or house photo when there is one)
 - [x] Add `audio/track1-4.mp3` (45-second previews: Up In The Air, Penina Pie, JNIX, Goodnight)
-- [x] Artists: Goodnight (shown first) by Xavier Fuentes, Up In The Air by Shani Shivet, Penina Pie and JNIX by Eden Naor, Wilderness of the Inner Being by El Gato (YouTube link only, no audio preview yet) Penina Pie and JNIX are Eden Naor (YouTube @Eden33Naor). No genres shown.
+- [x] Artists: Goodnight (shown first) by Xavier Fuentes, Up In The Air by Shani Shivet, Penina Pie and JNIX by Eden Naor, Wilderness of the Inner Being by El Gato (audio/track5.mp3) Penina Pie and JNIX are Eden Naor (YouTube @Eden33Naor). No genres shown.
 - [x] Formspree form `xnpjylnj` connected (sends to antiguarecordingstudios@gmail.com; submits in-page with a thank-you message)
 - [ ] Optional: custom domain (e.g. `casa13studio.com`). DNS steps are in the README.
 - [ ] Optional: favicon, `og:image` with an absolute URL once the domain is set, a Spanish toggle, testimonials once the first retreat runs
