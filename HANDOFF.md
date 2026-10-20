@@ -25,14 +25,14 @@ Until now, marketing has been Instagram and referrals. This site is the link for
 **EP Retreat: $5,900 per band** (≈ $1,475 per person for a 4-piece)
 
 - 5 nights in a private house near Antigua
-- 6 songs recorded and mixed
+- 6 songs recorded, mixed and mastered (streaming-ready), with stems, full mix and master delivered for each
 - Private cook and housekeeper
 - Airport pickup and daily transport
 - Instrumentalists and production support
 - Planning call before the trip
-- **Not included:** flights, mastering (add-on), excursions (add-on)
+- **Not included:** flights, excursions (add-on)
 
-**Add-ons:** excursions (volcano hikes, tours, Lake Atitlán, nights out), mastering, extra songs or nights, live session or music video shoot.
+**Add-ons:** excursions (volcano hikes, tours, Lake Atitlán, nights out), extra songs or nights, live session or music video shoot.
 
 **Payment terms:** 50% non-refundable deposit to book. Balance due 30 days before arrival. Bank transfer or Wise preferred.
 
@@ -60,7 +60,7 @@ Single self-contained file: inline CSS and JS, Google Fonts (Fraunces + Inter), 
 4. Pricing: the EP Retreat card, plus add-ons, payment, and solo/duo
 5. Past work: 4 audio players in a 2×2 grid
 6. Adventures: photo gallery (volcano, Antigua, nights out, Lake Atitlán, food)
-7. FAQ: safety, airport, visas, what to bring, drums, more songs, mastering, English
+7. FAQ: safety, airport, visas, what to bring, drums, more songs, mastering (included), deliverables (stems, mix, master), English
 8. Contact: Instagram, WhatsApp and email links, plus the Formspree inquiry form
 
 Design: warm dark theme with a lava-orange accent (`--lava:#e0643a`), responsive down to 390px wide.
